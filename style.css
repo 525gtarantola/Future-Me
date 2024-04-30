@@ -1,11 +1,9 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: black; 
-  font-family: "Unica One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
   }
-
 
 .navbar {
   background-color: #fff !important;
@@ -52,3 +50,20 @@ footer {
 li { 
   color: white;
 }
+
+.image-button {
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  padding: 0; /* Remove default button padding */
+  cursor: pointer; /* Change cursor to pointer on hover */
+
+  /* Optional: Adjust width and height of the button */
+  width: 100px;
+  height: 50px;
+}
+
+.image-button img {
+  width: 100%; /* Ensure the image fills the button */
+  height: 100%; /* Ensure the image fills the button */
+}
+
