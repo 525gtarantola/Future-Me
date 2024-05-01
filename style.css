@@ -51,19 +51,44 @@ li {
   color: white;
 }
 
+.image-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .image-button {
+  position: relative;
   border: none; /* Remove default button border */
   background: none; /* Remove default button background */
   padding: 0; /* Remove default button padding */
   cursor: pointer; /* Change cursor to pointer on hover */
 
   /* Optional: Adjust width and height of the button */
-  width: 100px;
-  height: 50px;
+  width: 300px;
+  height: 300px;
 }
 
 .image-button img {
   width: 100%; /* Ensure the image fills the button */
   height: 100%; /* Ensure the image fills the button */
+}
+
+.button-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0; /* Initially hide the label */
+  transition: opacity 0.3s ease;
+}
+
+.image-button:hover .button-label {
+  opacity: 1; /* Show label on hover */
 }
 
