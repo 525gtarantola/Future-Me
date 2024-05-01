@@ -92,3 +92,52 @@ li {
   opacity: 1; /* Show label on hover */
 }
 
+.carousel-image {
+  max-height: 500px; /* Set the maximum height of the images */
+  width: auto; /* Ensure the width adjusts proportionally */
+  margin: auto; /* Center the images horizontally */
+  margin-top: 20px; /* Add top margin to the images */
+}
+
+.hero {
+  position: relative;
+  height: 75vh; 
+  background-image: url('images/maths.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.overlay h2 {
+  margin: 0;
+}
+
+.education {
+  background-color: black;
+}
+
+.hero2 {
+  position: relative;
+  height: 75vh; 
+  background-image: url('images/money.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero3 {
+  position: relative;
+  height: 75vh; 
+  background-image: url('images/books.jpg');
+  background-size: cover;
+  background-position: center;
+}
